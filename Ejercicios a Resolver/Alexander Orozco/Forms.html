@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Forms and containers</h1>
+    
+    <form action="Forms.php"> <!---Creacion de formulario -->
+
+        <fieldset> <!-----Contenedor 1-->
+            <legend>User Data</legend>
+
+            <label for="Name">Name:</label><!--labels-->
+            <input type="text" id="Name" placeholder="Ingrese su nombre aquí"> <!--textbox-->
+    
+            <label for="Lastn" style="color: blue;"><b>Last name</b></label>
+            <input type="text" name="Apellidos" id="Lastn" placeholder="Ingrese su apellidp aquí"><br><br>
+    
+            <label for="mail">Email:</label>
+            <input type="email" name="Correo" id="mail" placeholder="Ingrese su correo @ aquí" required>
+    
+            <label for="Pass">Password:</label>
+            <input type="password" name="Pass" id="Pass" placeholder="Solo letras y números"><br><br>
+
+            <label for="fecha">Birthdate:</label>
+            <input type="date" name="fecha" id="fecha"><br><br>
+
+            <label for="archivo">Upload a PDF file</label>
+            <input type="file" name="archivo" id="archivo"><br><br>
+            
+            <textarea name="" id="tarea1" cols="30" rows="10" placeholder="Simple personal description"></textarea><!--Text area-->
+
+        </fieldset><br>
+        <fieldset>
+            <legend>Favorite color</legend>
+            
+            <input type="radio" name="color" id="rad1" value="rad1"> <!--Radio buttom-->
+            <label for="rad1">Red</label><br> <!--labels-->
+
+            <input type="radio" name="color" id="rad2" value="rad2">
+            <label for="rad2">Blue</label><br>
+
+            <input type="radio" name="color" id="rad3" value="rad3">
+            <label for="rad3">Green</label><br>
+
+            <input type="radio" name="color" id="rad4" value="rad4">
+            <label for="rad4">Black</label><br>
+
+            <label for="paleta">Selccione color:</label>
+            <input type="color" name="colors" id="colors" value="colors"><br><br>
+
+            <select name="listcolor" id="color2"> <!---List-->
+                <option value="empty"></option>
+                <option value="red1">Red</option>
+                <option value="yellow1">Yellow</option>
+                <option value="green1">Green</option>
+                <option value="blue1">Blue</option>
+            </select>
+        </fieldset><br>
+         <fieldset>
+            <legend>Checkbox</legend><!---checkbox-->
+            
+            <input type="checkbox" name="hobi1" id="read1">
+            <label for="read1">Read</label><br>
+            
+            <input type="checkbox" name="hobi1" id="play1">
+            <label for="play1">Play</label><br>
+            
+            <input type="checkbox" name="hobi2" id="run1">
+            <label for="run1">Run</label><br>
+
+            <input type="checkbox" name="hobi3" id="study1">
+            <label for="study1">Study</label><br>
+            
+            <input type="checkbox" name="hobi4" id="walk1">
+            <label for="walk1">Walk</label>
+         </fieldset><br>
+         <input type="submit" id="" value="Send">
+         <input type="reset" value="Clear">
+    </form>
+</body>
+</html>
