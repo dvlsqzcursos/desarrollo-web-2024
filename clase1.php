@@ -1,3 +1,4 @@
+<!--index.html-->
 <html>
     <body>
         <form action="formpost.php" method="post">
@@ -8,6 +9,10 @@
     </body>
 </html>
 
+
+
+
+<!--frompost.php-->
 <html>
     <body>
         Hola <?php echo $_POST["nombre"]; ?><br>
@@ -15,6 +20,16 @@
     </body>
 </html>
 
+
+
+
+
+
+
+
+
+
+<!-- ejemplo conexion base de datos -->
 <?php
 $servername = "localhost";
 $username = "username";
